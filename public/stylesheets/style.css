@@ -1,0 +1,71 @@
+body {
+  background-image: url(bg.jpg);
+  background-color: rgb(71, 93, 155);
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed background size to cover */
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  font-family: Arial, sans-serif; /* Added a fallback font */
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-family: cursive;
+  margin-bottom: 30px; /* Added margin-bottom for spacing */
+}
+
+
+
+.form1 {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px; /* Increased padding for better spacing */
+  margin-top: 50px; /* Adjusted margin-top for better positioning */
+  width: 50%; /* Increased width for better form visibility */
+  max-width: 400px; /* Added max-width to prevent form from becoming too wide */
+  margin: 0 auto; /* Center the form horizontally */
+  border-radius: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%; /* Make input fields occupy full width */
+  height: 40px; /* Increased height for better visibility and touch */
+  border-radius: 7px;
+  text-align: center;
+  margin-bottom: 20px; /* Added margin-bottom for spacing between input fields */
+}
+
+input[type="submit"] {
+  width: 100%; /* Make submit button occupy full width */
+  height: 50px; /* Increased height for better visibility and touch */
+  font-size: 20px;
+  background-color: #00FF7F;
+  border: none; /* Removed border for cleaner look */
+  border-radius: 7px;
+  cursor: pointer; /* Added cursor pointer on hover */
+  margin-top: 20px; /* Added margin-top for spacing between input fields and submit button */
+}
+
+input[type="submit"]:hover {
+  color: white;
+  background-color: #008000; /* Darkened the color on hover */
+}
+
+a {
+  color: white; /* Changed link color to match the theme */
+  text-decoration: none; /* Removed underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error {
+  font-weight: 500;
+  color: red;
+  text-transform: capitalize;
+  margin: 10px 0; /* Adjusted margin for better spacing */
+}

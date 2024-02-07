@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+  <link rel="stylesheet" href="/stylesheets/profile2.css">
+  <title>Document</title>
+  <style>
+    /* CSS for the search input field */
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .search-container input[type="search"] {
+      width: 20%;
+      padding: 10px;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="profile-info">
+      <h2 class="name"><%= user.username %></h2>
+      <h3 class="username"><%= user.email %></h3>
+    </div>
+    <a href="/logout" id="logoutBtn" class="logout-btn" style="position: absolute; top: 40px; right: 50px;color: white;padding: 15px;background-color: rgb(119, 40, 40);">Logout</a>
+  </div>
+</div>
+
+<div class="li-container">
+  <ul>
+    <% tasks.forEach(function(elem){ %>
+      <li>
+        <div class="content">
+          <div class="titlte"><b>Title</b><br><%= elem.title %></div>
+          <div class="state"><span class="good"><b>Status</b><br><%= elem.status %></span></div>
+        </div>
+      </li>
+    <% })  %>
+  </ul>
+</div>
+<!-- 
+<div class="search-container">
+  <h1>Assign Tasks</h1><br><br>
+  <input type="search" id="inputUserName" placeholder="Search Person">
+</div>
+<div class="users"></div> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-pU9qgE3iL8oz5s7vNqCVt5y/UaLI9wnIGETgfuW4OQvupH5Tha5sP1VJBVgExBYwTQk7cNZ8eAjcw+d6VzCDBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script>
+  const inp = document.querySelector("#inputUserName")
+  let clutter = "" // Initialize clutter outside the event listener
+  inp.addEventListener("input", function() {
+    axios.get(`/username/${inp.value}`).then(function(data){
+      console.log(data)
+      data.data.forEach((element) => {
+        clutter += `
+          <a href="/profile" style="outline:none;"></a>
+          <div style="color:white;display:flex;align-items:center;justify-content:center;margin-top:5px;overflow:hidden">
+            <h3>${element.username} </h3>
+          </div>`
+      });
+      document.querySelector(".users").innerHTML = clutter
+    });
+  });
+</script> -->
+
+</body>
+</html>

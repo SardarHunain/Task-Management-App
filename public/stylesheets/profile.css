@@ -1,0 +1,206 @@
+/* Form container */
+main {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+/* Form styling */
+form {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.AddToList {
+  width: 50%;
+  margin-top: 10px;
+  font-size: 16px;
+  width: 50px;
+}
+
+/* CSS for centering the div */
+.center-div {
+  width: 100%; /* Ensure the div takes full width of the page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 9l4-5H2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 20px;
+}
+
+/* Task section styling */
+section h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for task container */
+.tasks {
+  width: 100%; /* Ensure tasks container takes full width of its parent */
+  margin-top: 20px; /* Add some margin at the top for spacing */
+}
+
+/* CSS for individual task */
+.task {
+  border: 1px solid #ccc; /* Add a border around each task */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  padding: 10px; /* Add padding inside each task */
+  margin-bottom: 10px; /* Add some margin at the bottom for spacing between tasks */
+  background-color: #f9f9f9; /* Set background color for tasks */
+}
+
+/* CSS for task title */
+.task h3 {
+  margin-top: 0;
+  text-align: center; /* Remove margin at the top of the task title */
+}
+
+/* CSS for task description */
+.task p {
+  margin-bottom: 5px;
+  text-align: center; /* Add some margin at the bottom of the task description */
+}
+
+/* CSS for task status and edit button */
+.task p:last-child {
+  margin-bottom: 0; /* Remove margin at the bottom of the last paragraph in each task */
+}
+
+.task button {
+  margin-left: 10px; /* Add some margin to the left of the edit button */
+}
+
+
+
+/* 
+.tasks {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.tasks h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+
+  /* CSS for task container */
+
+input[type="hidden"]{
+  margin: 0px;
+  background-color: #ffffff;
+  padding: 0px;
+}
+
+.task h3 {
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.task p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.edit{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.edit:hover{
+  background-color: #0056b3;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .tasks {
+    margin: 10px;
+  }
+
+  .task {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .task h3 {
+    font-size: 18px;
+  }
+
+  .task p {
+    font-size: 14px;
+  }
+}

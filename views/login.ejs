@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1>Login</h1>
+    <div class="form1">
+      <% if(error.length > 0){ %>
+      <p class="error"> <%= error %> </p>
+      <% } %>
+      <!-- Registration Form<br>!-->
+      <form action="/login" method="post">
+        <input type="text" id="req3" placeholder="username" name="username" required><br><br>
+        <input type="password" id="req5" placeholder="Password" name="password" required><br>
+        <input type="submit" value="Login" />
+      </form>
+      <a href="/">Don't have an account? Signup</a>
+    </div>
+  </div>
+</body>
+
+</html>

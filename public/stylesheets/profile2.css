@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #814343;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #cc6868;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  margin: 0;
+}
+
+.number {
+  font-size: 24px;
+  margin: 0;
+}
+
+.label {
+  font-size: 14px;
+  margin: 0;
+}
